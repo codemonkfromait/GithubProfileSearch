@@ -4,7 +4,11 @@ import { Card, CardBody } from "reactstrap";
 export default function UserCard({ user }) {
   return (
     <Card className="text-center mt-3 mb-4">
-      <img src={user.avatar_url} className="img-thumbnail img-fluid" />
+      <img
+        src={user.avatar_url}
+        alt="your seach user image"
+        className="img-thumbnail img-fluid"
+      />
       <CardBody>
         <div className="text-primary">{user.name}</div>
         <div className="text-primary">{user.location}</div>
