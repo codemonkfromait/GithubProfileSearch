@@ -11,6 +11,7 @@ export default function Repos({ repos_url }) {
       const { data } = await Axios.get(repos_url);
       setRepos(data);
     };
+    fetchRepos();
   }, [repos_url]);
 
   return (
