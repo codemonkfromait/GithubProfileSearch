@@ -6,6 +6,7 @@ export default function UserCard({ user }) {
     <Card className="text-center mt-3 mb-4">
       <img
         src={user.avatar_url}
+        style={{ width: "80px", height: "50px" }}
         alt="your search user..."
         className="img-thumbnail img-fluid"
       />
