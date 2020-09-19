@@ -4,7 +4,6 @@ import {
   Row,
   Col,
   CardBody,
-  CardText,
   CardFooter,
   CardHeader,
   Label,
@@ -16,14 +15,14 @@ import {
 } from "reactstrap";
 
 import firebase from "firebase/app";
-import { UserContext } from "../Context/UserContext";
-import { Redirect, withRouter } from "react-router-dom";
+//import { UserContext } from "../Context/UserContext";
+import { withRouter } from "react-router-dom";
 import { toast } from "react-toastify";
-import { useContext } from "react";
+//import { useContext } from "react";
 import { useState } from "react";
 
 const Signup = ({ history }) => {
-  const context = useContext(UserContext);
+  //const context = useContext(UserContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
