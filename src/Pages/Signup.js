@@ -37,6 +37,9 @@ const Signup = ({ history }) => {
         //   email: res.user.email,
         //   uid: res.user.uid,
         // });
+        toast("Account created successfully, please login", {
+          type: "success",
+        });
       })
       .catch((error) => {
         console.log(error);
